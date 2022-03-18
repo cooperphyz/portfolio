@@ -7,12 +7,16 @@ const SlantedBanner = () => {
   return (
     <div className='slantedbanner'>
       <div className='banner-top'>
-        <h1>Slanted Banner</h1>
-        <ParticleEnv/>
+        <h1 className='banner-top-heading'>G Cooper</h1>
+        <div className='particles'>
+          <ParticleEnv/>
+        </div>
         <img src={backgroundImage}alt="bg"></img>
       </div>
-      <div className='content'>
-        <p>Name Jeff</p>
+      <div className='diagonal-box'>
+        <div className='content'>
+          <p>Name Jeff</p>
+        </div>
       </div>
     </div>
   )
