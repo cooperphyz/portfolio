@@ -1,9 +1,18 @@
 import React from 'react'
-//import styled from 'styled-components'
+import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className='nav'>
+      <nav className='navbar'>
+        <div className='brand-title'>Brand Name</div>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Academics</a></li>
+        </ul>
+      </nav>
+    </div>
   )
 }
 
