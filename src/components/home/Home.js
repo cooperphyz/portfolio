@@ -1,10 +1,10 @@
 import React from 'react'
-import ParticleEnv from './ParticleEnv';
+import SlantedBanner from './SlantedBanner';
 
 const Home = () => {
   return (
     <div>
-        <ParticleEnv/>
+      <SlantedBanner/>
     </div>
   )
 }

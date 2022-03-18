@@ -1,5 +1,4 @@
 import React from 'react'
-import Particles from "react-tsparticles";
 import StarfieldAnimation from 'react-starfield-animation'
 
 const ParticleEnv = () => {
@@ -8,7 +7,7 @@ const ParticleEnv = () => {
       style={{
         position: 'absolute',
         width: '100%',
-        height: '100%'
+        height: '100%',
       }}
     />
     );
