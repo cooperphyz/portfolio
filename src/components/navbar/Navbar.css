@@ -34,7 +34,7 @@
   border: none;
   cursor: pointer;
   position: relative;
-  color: rgb(129, 61, 197);
+  color: rgb(142, 69, 216);
   transition: color 0.2s;
   letter-spacing: 1px;
   text-decoration: none;
@@ -46,7 +46,7 @@
 .navbar li a:after {
   content: "";
   position: absolute;
-  background-color: rgb(43, 225, 245);
+  background-color: rgb(39, 51, 141);
   z-index: -1;
 }
 .navbar li a:hover {
