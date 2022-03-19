@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className='nav'>
       <nav className='navbar'>
         <div className='brand-title'>
-          <li><a href="/">Gatlin Cooper</a></li>
+          <li><a href="/">Home</a></li>
         </div>
         <ul>
           <li><a href="/">About</a></li>
