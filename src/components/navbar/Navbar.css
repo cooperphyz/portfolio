@@ -11,6 +11,13 @@
   z-index: 10;
 }
 
+.brand-title {
+  color: rgb(129, 61, 197);
+  font-size: large;
+  left: -20px;
+  font-weight: 800;
+}
+
 .navbar ul {
   list-style: none;
 }
@@ -26,17 +33,19 @@
   border: none;
   cursor: pointer;
   position: relative;
-  color: rebeccapurple;
+  color: rgb(129, 61, 197);
   transition: color 0.2s;
   letter-spacing: 1px;
   text-decoration: none;
   padding: 20px;
+  font-weight: 800;
+  font-size: large;
 }
 
 .navbar li a:after {
   content: "";
   position: absolute;
-  background-color: rebeccapurple;
+  background-color: rgb(43, 225, 245);
   z-index: -1;
 }
 .navbar li a:hover {
@@ -50,7 +59,7 @@ button.left:after {
   height: 100%;
   width: 0.08em;
   transform: skew(-20deg);
-  transition: width 0.2s;
+  transition: width 0.1s;
 }
 .navbar li a:hover:after {
   width: calc(100% + 0.6em);
@@ -62,7 +71,7 @@ button.left:after {
   height: 100%;
   width: 0.08em;
   transform: skew(-20deg);
-  transition: width 0.2s;
+  transition: width 0.1s;
 }
 .navbar li a:hover:after {
   width: calc(100% + 0.6em);

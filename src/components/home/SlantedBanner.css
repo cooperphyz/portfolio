@@ -23,6 +23,18 @@ body {
   text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 5rem;
+}
+
+.banner-top-subheading {
+  font-family: "Spartan";
+  position: absolute;
+  top: 60%;
+  color: white;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
 }
 
 .content {
