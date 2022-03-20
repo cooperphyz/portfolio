@@ -1,16 +1,17 @@
 import React from 'react'
+import './SlantDivider.css';
 
-const SlantDivider = () => {
+const SlantDivider = (props) => {
   return (
-    <div className='content-text'>
-        <h1>{this.heading}</h1>
-        <p>{this.par1}</p>
-        <p>{this.par2}</p>
-        <p>{this.par3}</p>
-      <div className='content-links'>
-        <p>Boogas</p>
+    <div className='content-container'>
+      <div className='content-text'>
+        <h1>{props.heading}</h1>
+        <p>{props.par1}</p>
+        <p>{props.par2}</p>
+        <p>{props.par3}</p>
       </div>
-      <div className='content-lower'/>
+      <div className='content-panel-top'/>
+      <div className='content-panel-bottom'/>
     </div>
   )
 }
