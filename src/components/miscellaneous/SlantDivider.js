@@ -10,8 +10,11 @@ const SlantDivider = (props) => {
         <p>{props.par2}</p>
         <p>{props.par3}</p>
       </div>
+      
       <div className='content-panel-top'/>
       <div className='content-panel-bottom'/>
+      <div className='border-bottom'/>
+      <div className='border-top'/>
     </div>
   )
 }

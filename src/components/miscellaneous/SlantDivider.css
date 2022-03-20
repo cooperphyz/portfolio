@@ -19,53 +19,18 @@
   color: white;
   padding-left: 10%;
   padding-right: 10%;
-  top: 19%;
+  top: 70%;
 }
 
 .content-text p {
   font-size: 1.2rem;
 }
 
-/* Bottom part of banner */
-.content-panel {
-  background: linear-gradient(90deg, #202d4d 0%, #145936 100%);
-  color: #fff;
-  height: 100px;
-  top: 100px;
-  position: absolute;
-  text-align: center;
-  width: 100vw;
-  left: 0;
-  align-self: center;
-}
-
-.content-panel:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 360px;
-  bottom: -150px;
-  left: 0;
-  background: inherit;
-  transform: skewY(7deg);
-  z-index: 0;
-}
-.content-panel:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 360px;
-  bottom: -150px;
-  right: 0;
-  background: inherit;
-  transform: skewY(-7deg);
-  z-index: 0;
-}
-
 .content-panel-top {
   background: linear-gradient(90deg, #202d4d 0%, #145936 100%);
   height: 260px;
   clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
   margin-top: -40px;
 }
 
@@ -73,6 +38,27 @@
   background: linear-gradient(90deg, #202d4d 0%, #145936 100%);
   height: 260px;
   clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
   margin-top: 0px;
+  transform: rotateX(180deg);
+  z-index: 1;
+}
+
+.border-top {
+  background-color: white;
+  position: relative;
+  clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -550px;
+  height: 150px;
+  z-index: -2;
+}
+
+.border-bottom {
+  background-color: white;
+  position: relative;
+  clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -135px;
+  height: 150px;
+  z-index: -2;
   transform: rotateX(180deg);
 }
