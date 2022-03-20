@@ -1,3 +1,7 @@
+body {
+  background-image: url("../../img/gspace.jpg");
+}
+
 .top-divider-banner {
   position: relative;
   top: -50px;

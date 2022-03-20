@@ -39,7 +39,7 @@
   height: 260px;
   clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
-  margin-top: 0px;
+  margin-top: -1px;
   transform: rotateX(180deg);
   z-index: 1;
 }
@@ -57,8 +57,8 @@
   background-color: white;
   position: relative;
   clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
-  margin-top: -135px;
-  height: 150px;
+  margin-top: -120px;
+  height: 135px;
   z-index: -2;
   transform: rotateX(180deg);
 }
