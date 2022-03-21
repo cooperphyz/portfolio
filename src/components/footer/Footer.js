@@ -1,6 +1,6 @@
 import React from 'react'
 // eslint-disable-next-line
-import { Col, Row } from 'react-bootstrap';
+import './Footer.css'
 
 const Footer = () => {
   return (

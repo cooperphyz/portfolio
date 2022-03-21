@@ -17,7 +17,7 @@ function App() {
         <Route path="/academics"/>
         <Route path="/skills"/>
       </Routes>
-      <Footer />
+    
     </Router>
   );
 }
