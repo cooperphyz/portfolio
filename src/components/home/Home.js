@@ -3,6 +3,7 @@ import LeftSliceDiv from '../miscellaneous/LeftSliceDiv';
 import SlantDividerDown from '../miscellaneous/SlantDividerDown';
 import SlantedBanner from './SlantedBanner';
 import './Home.css';
+import ParagraphContentPanel from '../miscellaneous/ParagraphContentPanel';
 
 const Home = () => {
   return (
@@ -13,6 +14,9 @@ const Home = () => {
       </div>
       <div className='content-1'>
         <LeftSliceDiv/>
+      </div>
+      <div className='content-2'>
+        <ParagraphContentPanel/>
       </div>
     </div>
   )
