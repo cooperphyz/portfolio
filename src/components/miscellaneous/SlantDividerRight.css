@@ -84,7 +84,7 @@
   text-decoration: none;
   padding: 20px;
   font-weight: 800;
-  font-size: 23px;
+  font-size: 25px;
 }
 
 .link a:after {
@@ -120,4 +120,10 @@ button.left:after {
 }
 .link a:hover:after {
   width: calc(100% + 0.6em);
+}
+
+@media (max-width: 779px) {
+  .content-text-right {
+    top: 60%;
+  }
 }
