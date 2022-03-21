@@ -1,0 +1,54 @@
+.content-container {
+  z-index: 1;
+  position: relative;
+}
+
+.content-links {
+  font-family: "Spartan";
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  color: white;
+  padding-top: 100px;
+}
+
+.content-text {
+  font-family: "Spartan";
+  position: absolute;
+  z-index: 1;
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  top: 70%;
+}
+
+.downcontent-text p {
+  font-size: 1.2rem;
+}
+
+.downcontent-panel-top {
+  background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
+  height: 200px;
+  clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -40px;
+}
+
+.downcontent-panel-bottom {
+  background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
+  height: 100px;
+  clip-path: polygon(0% 100px, 50% 70px, 100% 100px, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0% 100px, 50% 70px, 100% 100px, 100% 100%, 0 100%);
+  margin-top: -1px;
+  transform: rotateX(180deg);
+  z-index: 1;
+}
+
+.downborder-top {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -330px;
+  height: 150px;
+  z-index: -2;
+}

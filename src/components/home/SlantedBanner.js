@@ -1,5 +1,5 @@
 import React from 'react'
-import backgroundImage from '../../img/3187989.jpg'
+import backgroundImage from '../../img/1741531.jpg'
 import { Parallax } from 'react-parallax';
 import ParticleEnv from './ParticleEnv';
 import './SlantedBanner.css';
