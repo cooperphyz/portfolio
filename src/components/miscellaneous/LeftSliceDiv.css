@@ -1,4 +1,5 @@
 #outer-left {
+  font-family: "Spartan";
   -ms-transform: skew(-30deg, 0deg);
   /* IE 9 */
   -webkit-transform: skew(-30deg, 0deg);
@@ -11,10 +12,20 @@
   border-bottom: 3px solid #1b267e;
   padding: 10px 30px 10px 75px;
   font-size: 20px;
-  color: #2e8def;
+  color: #ffffff;
   position: relative;
   left: -100px;
+  box-shadow: 1px 15px 15px rgb(16, 16, 16);
 }
+
+.headingtext {
+  padding-top: 20px;
+  padding-left: 65px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
 #outer-left:after {
   content: "";
   display: inline-block;
@@ -33,4 +44,67 @@
   /* Chrome, Safari, Opera */
   transform: skew(30deg, 0deg);
   display: inline-block;
+}
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.link a {
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  color: rgb(142, 68, 216);
+  transition: color 0.2s;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.link a:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(39, 51, 141);
+  z-index: -1;
+}
+.link a:hover {
+  color: #fff;
+}
+
+/* Directions */
+button.left:after {
+  left: -0.3em;
+  top: 0;
+  height: 100%;
+  width: 0.08em;
+  transform: skew(-20deg);
+  transition: width 0.1s;
+}
+.link a:hover:after {
+  width: calc(100% + 0.6em);
+}
+
+.link a:after {
+  right: -0.3em;
+  top: 0;
+  height: 100%;
+  width: 0.08em;
+  transform: skew(-20deg);
+  transition: width 0.1s;
+}
+.link a:hover:after {
+  width: calc(100% + 0.6em);
+}
+
+@media (max-width: 779px) {
+  .link a {
+    font-size: 10px;
+  }
 }
