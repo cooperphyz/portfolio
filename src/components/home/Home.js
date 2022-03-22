@@ -21,7 +21,6 @@ const Home = () => {
       <div className='content-2'>
         <ParagraphContentPanel/>
       </div>
-      <div style={{'flex-grow':'1'}}></div>
     </div>
     <footer>
         <Footer/>
