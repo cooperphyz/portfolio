@@ -5,10 +5,11 @@ import SlantedBanner from './SlantedBanner';
 import Footer from '../footer/Footer';
 import './Home.css';
 import ParagraphContentPanel from '../miscellaneous/ParagraphContentPanel';
+import StickyFooter from 'react-sticky-footer';
 
 const Home = () => {
   return (
-    <div>
+    <div className='home-container'>
       <SlantedBanner/>
       <div className='top-divider-banner'>
         <SlantDividerDown/>
@@ -19,9 +20,9 @@ const Home = () => {
       <div className='content-2'>
         <ParagraphContentPanel/>
       </div>
-      <div className='content-footer'>
+      <footer className='content-footer'>
         <Footer/>
-      </div>
+      </footer>
     </div>
   )
 }

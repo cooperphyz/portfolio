@@ -4,7 +4,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className='flex-wrapper'>
+    <footer className='flex-wrapper'>
     <div className='footer-content'>
       <div className='footer-col1'>
 asfdasd
@@ -16,7 +16,7 @@ adfads
 asdfs
       </div>
     </div>
-    </div>
+    </footer>
   ) 
 }
 
