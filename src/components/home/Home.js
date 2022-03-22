@@ -5,7 +5,6 @@ import SlantedBanner from './SlantedBanner';
 import Footer from '../footer/Footer';
 import './Home.css';
 import ParagraphContentPanel from '../miscellaneous/ParagraphContentPanel';
-import StickyFooter from 'react-sticky-footer';
 
 const Home = () => {
   return (

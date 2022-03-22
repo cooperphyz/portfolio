@@ -1,8 +1,13 @@
+body {
+  font-family: "Spartan";
+}
+
 .footer-content {
+  font-family: "Spartan";
   z-index: 50;
   color: white;
-  background-color: #834a4f;
-  height: 150px;
+  background: #333333;
+  height: 220px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -17,6 +22,30 @@
   justify-content: space-around;
 }
 
-.footer-col3 {
-  padding-right: 100px;
+.footer-col1-list,
+.footer-col2-list,
+.footer-col3-list {
+  padding: 0px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.footer-col2-list a,
+.footer-col2-list p {
+  color: white;
+  text-align: center;
+}
+
+.footer-col3-list a,
+.footer-col3-list p {
+  color: white;
+  text-align: right;
+}
+
+.footer-topdecoration {
+  transform: translateY(130px);
+  height: 30px;
+  background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
+  content: "";
+  bottom: 20px;
 }
