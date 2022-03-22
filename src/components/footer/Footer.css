@@ -1,5 +1,31 @@
-footer {
-  z-index: 0;
-  position: fixed;
-  bottom: 0;
+.flex-wrapper {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-content {
+  z-index: 50;
+  color: white;
+  background-color: #834a4f;
+  height: 150px;
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.footer-col1,
+.footer-col2,
+.footer-col3 {
+  display: inline-block;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.footer-col3 {
+  padding-right: 100px;
 }

@@ -1,5 +1,6 @@
 body {
   background-color: rgb(22, 22, 28);
+  min-height: 100vh;
 }
 
 .top-divider-banner {
@@ -21,4 +22,9 @@ body {
 .content-2 {
   position: relative;
   top: 200px;
+}
+
+.content-footer {
+  position: relative;
+  top: 400px;
 }

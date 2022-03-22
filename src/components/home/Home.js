@@ -2,6 +2,7 @@ import React from 'react'
 import LeftSliceDiv from '../miscellaneous/LeftSliceDiv';
 import SlantDividerDown from '../miscellaneous/SlantDividerDown';
 import SlantedBanner from './SlantedBanner';
+import Footer from '../footer/Footer';
 import './Home.css';
 import ParagraphContentPanel from '../miscellaneous/ParagraphContentPanel';
 
@@ -17,6 +18,9 @@ const Home = () => {
       </div>
       <div className='content-2'>
         <ParagraphContentPanel/>
+      </div>
+      <div className='content-footer'>
+        <Footer/>
       </div>
     </div>
   )
