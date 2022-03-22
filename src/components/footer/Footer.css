@@ -3,8 +3,6 @@
   color: white;
   background-color: #834a4f;
   height: 150px;
-  position: absolute !important;
-  bottom: 0 !important;
   width: 100%;
   display: flex;
   justify-content: space-around;

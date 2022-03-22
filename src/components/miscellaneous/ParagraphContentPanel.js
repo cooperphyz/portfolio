@@ -3,7 +3,8 @@ import './ParagraphContentPanel.css'
 
 const ParagraphContentPanel = () => {
   return (
-    <div className='paragraph-content'>
+    <div className='paragraph-container'>
+      <div className='paragraph-content'>
         <div className='paragraph-topdecoration'/>
         <div className='paragraph-header'>
             Hello, my name is Gatlin Cooper.
@@ -13,6 +14,7 @@ const ParagraphContentPanel = () => {
             <p>I love working with front-end frameworks, such as React.js and Ruby on Rails, to develop functional and practical web applications. </p>
             <p>Please feel free to browse the various sections of this website to learn more about me, my academics, and my projects.</p>
         </div>
+      </div>
     </div>
   )
 }

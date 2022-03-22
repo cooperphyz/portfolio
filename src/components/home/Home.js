@@ -9,6 +9,7 @@ import StickyFooter from 'react-sticky-footer';
 
 const Home = () => {
   return (
+    <div className='encompass-home'>
     <div className='home-container'>
       <SlantedBanner/>
       <div className='top-divider-banner'>
@@ -20,7 +21,9 @@ const Home = () => {
       <div className='content-2'>
         <ParagraphContentPanel/>
       </div>
-      <footer className='content-footer'>
+      <div style={{'flex-grow':'1'}}></div>
+    </div>
+    <footer>
         <Footer/>
       </footer>
     </div>

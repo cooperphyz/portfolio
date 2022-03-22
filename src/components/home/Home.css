@@ -1,6 +1,19 @@
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   background-color: rgb(22, 22, 28);
+  height: 100%;
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.encompass-home {
+  height: 100vh;
 }
 
 .top-divider-banner {
@@ -23,13 +36,17 @@ body {
 .content-2 {
   position: relative;
   top: 200px;
-  padding-bottom: 400px;
 }
 
-.content-footer {
-  position: sticky;
-  top: 100vh;
-  width: 100%;
-  height: 60px; /* Height of the footer */
-  background: #6cf;
+footer {
+  background: #3333;
+  color: white;
+  justify-self: flex-end;
+  margin-top: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
