@@ -72,3 +72,9 @@ body {
     font-size: 3rem;
   }
 }
+
+@media (max-width: 379px) {
+  .banner-top-heading {
+    font-size: 2rem;
+  }
+}
