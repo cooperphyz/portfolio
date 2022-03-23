@@ -148,8 +148,9 @@ button.left:after {
 }
 @media (max-width: 579px) {
   .headingtext {
-    padding-top: 0px;
+    padding-top: 2%;
     font-size: 1em;
+    padding-left: 14%;
   }
   .link a {
     font-size: 1em;
@@ -159,7 +160,7 @@ button.left:after {
   }
 }
 
-@media (max-width: 379px) {
+@media (max-width: 320px) {
   #outer-left {
     width: 75%;
     overflow-x: hidden;
