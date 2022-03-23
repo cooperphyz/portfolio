@@ -40,7 +40,7 @@
   text-decoration: none;
   padding: 20px;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 1.4em;
 }
 
 .navbar li a:after {
@@ -76,4 +76,25 @@ button.left:after {
 }
 .navbar li a:hover:after {
   width: calc(100% + 0.6em);
+}
+
+/* Hamburger Menu Functionality */
+
+@media only screen and (max-width: 950px) {
+  .navbar li {
+    display: none;
+  }
+  .navbar-hamburger {
+    display: inline;
+  }
+}
+
+.hamburger {
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  z-index: 1000;
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
