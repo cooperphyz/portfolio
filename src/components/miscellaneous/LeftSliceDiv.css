@@ -20,7 +20,7 @@
 
 .headingtext {
   padding-top: 20px;
-  padding-left: 65px;
+  padding-left: 7%;
   padding-bottom: 20px;
   font-weight: 500;
   font-size: 2rem;
@@ -52,6 +52,10 @@
   margin-top: 5px;
 }
 
+.link-icon {
+  font-size: 60px;
+  padding-left: -15px;
+}
 .link a {
   display: inline-block;
   margin-left: 40px;
@@ -104,7 +108,53 @@ button.left:after {
 }
 
 @media (max-width: 779px) {
+  #outer-left {
+    width: 80%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .link a {
-    font-size: 10px;
+    font-size: 0.8em;
+    margin-right: 20px;
+    padding: 10px;
+  }
+  .headingtext {
+    padding-top: 10px;
+    font-size: 1.5em;
+  }
+  .link-icon {
+    font-size: 30px;
+  }
+  .headingtext {
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 1550px) {
+  .headingtext {
+    padding-top: 10px;
+    font-size: 1.5em;
+  }
+  .link-icon {
+    font-size: 30px;
+    padding-left: 20px;
+    margin-right: 10px;
+  }
+  .link a {
+    font-size: 1.3em;
+    margin-right: 5px;
+    padding: 6px;
+  }
+}
+@media (max-width: 579px) {
+  .headingtext {
+    padding-top: 0px;
+    font-size: 1em;
+  }
+  .link a {
+    font-size: 1em;
+    margin-right: 15px;
+    padding: 5px;
+    padding-bottom: 10px;
   }
 }

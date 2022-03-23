@@ -60,11 +60,15 @@ body {
   .content-lower::after {
     top: 0;
   }
-  .banner-top-heading {
-    font-size: 4rem;
-  }
+
   .banner-top-subheading {
     font-size: 1.5rem;
     top: 70%;
+  }
+}
+
+@media (max-width: 579px) {
+  .banner-top-heading {
+    font-size: 3rem;
   }
 }

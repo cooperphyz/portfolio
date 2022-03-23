@@ -11,13 +11,13 @@ const LeftSliceDiv = () => {
       Quick Access Links and Resources
     </div>
     <div className='link'>
-          <a href="https://github.com/cooperphyz">GitHub</a><GoMarkGithub size={70}/>
+          <a href="https://github.com/cooperphyz">GitHub</a><GoMarkGithub className='link-icon'/>
         </div>
         <div className='link'>
-          <a href="https://www.linkedin.com/in/gatlin-cooper/">Resume</a><BsFillJournalBookmarkFill size={70}/>
+          <a href="https://www.linkedin.com/in/gatlin-cooper/">Resume</a><BsFillJournalBookmarkFill className='link-icon'/>
         </div>
         <div className='link'>
-          <a href="https://www.linkedin.com/in/gatlin-cooper/">LinkedIn</a><BsLinkedin size={70}/>
+          <a href="https://www.linkedin.com/in/gatlin-cooper/">LinkedIn</a><BsLinkedin className='link-icon'/>
         </div>
     </div>
 </div>

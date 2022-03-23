@@ -7,11 +7,13 @@ body {
   z-index: 50;
   color: white;
   background: #333333;
-  height: 220px;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .footer-col1,
@@ -48,4 +50,21 @@ body {
   background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
   content: "";
   bottom: 20px;
+}
+@media only screen and (max-width: 650px) {
+  .footer-col1,
+  .footer-col2,
+  .footer-col3,
+  .footer-content {
+    display: block;
+  }
+  .footer-col1-list a,
+  .footer-col1-list p,
+  .footer-col3-list a,
+  .footer-col3-list p,
+  .footer-col1-head,
+  .footer-col2-head,
+  .footer-col3-head {
+    text-align: center;
+  }
 }
