@@ -47,9 +47,13 @@ body {
 .footer-topdecoration {
   transform: translateY(130px);
   height: 30px;
-  background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
   content: "";
   bottom: 20px;
+
+  background: linear-gradient(45deg, #1b267e 0%, #3c0b46 100%);
+  background-size: 200% 200%;
+  animation: bg-animation 10s infinite alternate;
+  -webkit-animation: bg-animation 10s infinite alternate;
 }
 @media only screen and (max-width: 650px) {
   .footer-col1,
@@ -66,5 +70,31 @@ body {
   .footer-col2-head,
   .footer-col3-head {
     text-align: center;
+  }
+}
+
+/* Background Animations */
+
+@keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
   }
 }

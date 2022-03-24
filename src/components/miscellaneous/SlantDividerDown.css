@@ -27,21 +27,29 @@
 }
 
 .downcontent-panel-top {
-  background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
   height: 200px;
   clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 0, 50% 70px, 100% 0, 100% 100%, 0 100%);
   margin-top: -40px;
+
+  background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
+  background-size: 200% 200%;
+  animation: bg-animation 10s infinite alternate;
+  -webkit-animation: bg-animation 10s infinite alternate;
 }
 
 .downcontent-panel-bottom {
-  background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
   height: 100px;
   clip-path: polygon(0% 100px, 50% 70px, 100% 100px, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0% 100px, 50% 70px, 100% 100px, 100% 100%, 0 100%);
   margin-top: -1px;
   transform: rotateX(180deg);
   z-index: 1;
+
+  background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
+  background-size: 200% 200%;
+  animation: bg-animation 10s infinite alternate;
+  -webkit-animation: bg-animation 10s infinite alternate;
 }
 
 .downborder-top {
@@ -51,4 +59,30 @@
   margin-top: -330px;
   height: 150px;
   z-index: -2;
+}
+
+/* Background Animations */
+
+@keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
 }

@@ -30,13 +30,17 @@ body {
   bottom: 140px;
   right: -11px;
   transform: translateY(50px);
-  background: linear-gradient(90deg, #1b267e 0%, #3c0b46 100%);
   z-index: -1;
   -moz-transform: skew(-20deg);
   -webkit-transform: skew(-20deg);
   box-shadow: 1px 5px 15px rgb(16, 16, 16);
   -moz-box-shadow: 1px 5px 15px rgb(16, 16, 16);
   -webkit-box-shadow: 1px 5px 15px rgb(16, 16, 16);
+
+  background: linear-gradient(45deg, #1b267e 0%, #3c0b46 100%);
+  background-size: 200% 200%;
+  animation: bg-animation 10s infinite alternate;
+  -webkit-animation: bg-animation 10s infinite alternate;
 }
 
 .paragraph-header {
@@ -72,5 +76,31 @@ body {
     z-index: -1;
     -moz-transform: skew(0deg);
     -webkit-transform: skew(0deg);
+  }
+}
+
+/* Background Animations */
+
+@keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
   }
 }

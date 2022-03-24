@@ -1,15 +1,17 @@
+:root {
+  --gradient: linear-gradient(45deg, #1b267e, #3c0b46, #6e207e);
+}
+
 #outer-left {
   font-family: "Spartan";
   -ms-transform: skew(-30deg, 0deg);
-  /* IE 9 */
   -webkit-transform: skew(-30deg, 0deg);
-  /* Chrome, Safari, Opera */
   transform: skew(-30deg, 0deg);
   background: #333333;
   width: 60%;
   height: 200px;
   z-index: 20;
-  border-bottom: 3px solid #1b267e;
+  border-bottom: 3px solid #ffffff;
   padding: 10px 30px 10px 75px;
   font-size: 20px;
   color: #ffffff;
@@ -32,16 +34,19 @@
   position: absolute;
   width: 20px;
   height: 100%;
-  background: linear-gradient(0deg, #1b267e 0%, #3c0b46 100%);
   right: 0px;
   top: 0px;
   z-index: 10;
+
+  background: linear-gradient(0deg, #1b267e 0%, #3c0b46 100%);
+  background-size: 200% 200%;
+  animation: bg-animation 10s infinite alternate;
+  -webkit-animation: bg-animation 10s infinite alternate;
 }
+
 #inner-left {
   -ms-transform: skew(30deg, 0deg);
-  /* IE 9 */
   -webkit-transform: skew(30deg, 0deg);
-  /* Chrome, Safari, Opera */
   transform: skew(30deg, 0deg);
   display: inline-block;
 }
@@ -83,6 +88,7 @@
 }
 
 /* Directions */
+
 button.left:after {
   left: -0.3em;
   top: 0;
@@ -106,6 +112,8 @@ button.left:after {
 .link a:hover:after {
   width: calc(100% + 0.6em);
 }
+
+/* Scaling for window Sizes */
 
 @media (max-width: 779px) {
   #outer-left {
@@ -180,5 +188,31 @@ button.left:after {
     padding: 0px;
     font-size: 1em;
     margin-right: 5px;
+  }
+}
+
+/* Background Animations */
+
+@keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
   }
 }

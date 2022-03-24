@@ -5,8 +5,18 @@ import SlantedBanner from './SlantedBanner';
 import Footer from '../footer/Footer';
 import './Home.css';
 import ParagraphContentPanel from '../miscellaneous/ParagraphContentPanel';
+import Fade from 'react-reveal/Fade';
 
-const Home = () => {
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { show: false };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState({ show: !this.state.show });
+  }
+  render() {
   return (
     <div className='encompass-home'>
     <div className='home-container'>
@@ -15,7 +25,9 @@ const Home = () => {
         <SlantDividerDown/>
       </div>
       <div className='content-1'>
-        <LeftSliceDiv/>
+        <Fade left>
+          <LeftSliceDiv/>
+        </Fade>
       </div>
       <div className='content-2'>
         <ParagraphContentPanel/>
@@ -26,6 +38,7 @@ const Home = () => {
       </footer>
     </div>
   )
+}
 }
 
 export default Home
