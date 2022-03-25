@@ -15,7 +15,7 @@ const SlantedBanner = () => {
           <h1 className='banner-top-heading'>Gatlin Cooper</h1>
           <h2 className='banner-top-subheading'>Web Application Developer</h2>
           <div className='button-container'>
-            <ButtonMain hreflink="/projects" buttonlabel="View my Work" icon={<BsFillArrowRightSquareFill size={40} color={"white"} className={"button-icon"}/>}/>
+            <ButtonMain hreflink="/projects" buttonlabel="View my Work" icon={<BsFillArrowRightSquareFill color={"white"} className={"button-icon"}/>}/>
           </div>
           <div className='particles'>
             <ParticleEnv/>

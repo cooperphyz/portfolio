@@ -23,6 +23,7 @@
 }
 
 .button-icon {
+  font-size: 35px;
   margin-left: 8px;
   margin-bottom: 10px;
   vertical-align: middle;
@@ -92,4 +93,26 @@ button.left:after {
 }
 .button-main a:hover:after {
   width: calc(100% + 0.6em);
+}
+
+/* Scaling on different sizes */
+
+@media (max-width: 979px) {
+  .button-main a:before,
+  .button.left:after,
+  .button-main a:after {
+    height: 60%;
+    top: 12px;
+  }
+  .button-main a {
+    font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 0.2px;
+  }
+  .button-icon {
+    font-size: 25px;
+    margin-left: 4px;
+    margin-bottom: 8px;
+    vertical-align: middle;
+  }
 }
