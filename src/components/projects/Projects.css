@@ -1,0 +1,14 @@
+.top-divider-banner {
+  position: relative;
+  bottom: -40px;
+}
+
+.project1-display {
+  position: relative;
+  top: 100px;
+}
+
+.project2-display {
+  position: relative;
+  top: 150px;
+}
