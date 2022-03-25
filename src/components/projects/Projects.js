@@ -2,6 +2,7 @@ import React from 'react'
 import SlantDividerDown from '../miscellaneous/SlantDividerDown';
 import SlantedBanner from '../miscellaneous/SlantedBanner';
 import LeftSliceContent from './LeftSliceContent'
+import RightSliceContent from './RightSliceContent'
 import './Projects.css'
 
 import Slide from 'react-reveal/Slide';
@@ -17,13 +18,13 @@ const Projects = () => {
           </Slide>
         </div>
         <div className='project1-display'>
-          <Fade left delay={400}>
+          <Fade>
             <LeftSliceContent/>
           </Fade>
         </div>
         <div className='project2-display'>
-          <Fade left delay={400}>
-            <LeftSliceContent/>
+          <Fade>
+            <RightSliceContent/>
           </Fade>
         </div>
     </div>

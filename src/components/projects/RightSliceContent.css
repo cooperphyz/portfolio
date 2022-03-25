@@ -2,13 +2,13 @@
   --gradient: linear-gradient(45deg, #1b267e, #3c0b46, #6e207e);
 }
 
-#outer-left {
+#outer-right {
   font-family: "Spartan";
-  -ms-transform: skew(-30deg, 0deg);
-  -webkit-transform: skew(-30deg, 0deg);
-  transform: skew(-30deg, 0deg);
+  -ms-transform: skew(30deg, 0deg);
+  -webkit-transform: skew(30deg, 0deg);
+  transform: skew(30deg, 0deg);
   background: #333333;
-  width: 60%;
+  width: 70%;
   height: 200px;
   z-index: 20;
   border-bottom: 3px solid #000000af;
@@ -16,8 +16,9 @@
   font-size: 20px;
   color: #ffffff;
   position: relative;
-  left: -100px;
+  float: right;
   box-shadow: 1px 15px 15px rgb(16, 16, 16);
+  left: 100px;
 }
 
 .headingtext {
@@ -26,15 +27,24 @@
   padding-bottom: 20px;
   font-weight: 500;
   font-size: 2rem;
+  white-space: nowrap;
 }
 
-#outer-left:after {
+.dropdown-content {
+  position: relative;
+  top: 110px;
+  right: 252px;
+  -ms-transform: skew(-30deg, 0deg);
+  -webkit-transform: skew(-30deg, 0deg);
+}
+
+#outer-right:after {
   content: "";
   display: inline-block;
   position: absolute;
   width: 20px;
   height: 100%;
-  right: 0px;
+  left: 0px;
   top: 0px;
   z-index: 10;
 
@@ -44,10 +54,10 @@
   -webkit-animation: bg-animation 10s infinite alternate;
 }
 
-#inner-left {
-  -ms-transform: skew(30deg, 0deg);
-  -webkit-transform: skew(30deg, 0deg);
-  transform: skew(30deg, 0deg);
+#inner-right {
+  -ms-transform: skew(-30deg, 0deg);
+  -webkit-transform: skew(-30deg, 0deg);
+  transform: skew(-30deg, 0deg);
   display: inline-block;
 }
 .link {
@@ -89,7 +99,7 @@
 
 /* Directions */
 
-button.left:after {
+button.right:after {
   left: -0.3em;
   top: 0;
   height: 100%;
@@ -114,82 +124,6 @@ button.left:after {
 }
 
 /* Scaling for window Sizes */
-
-@media (max-width: 779px) {
-  #outer-left {
-    width: 80%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  .link a {
-    font-size: 0.8em;
-    margin-right: 20px;
-    padding: 10px;
-  }
-  .headingtext {
-    padding-top: 10px;
-    font-size: 1.5em;
-  }
-  .link-icon {
-    font-size: 30px;
-  }
-  .headingtext {
-    padding-left: 10%;
-  }
-}
-
-@media (max-width: 1550px) {
-  .headingtext {
-    padding-top: 10px;
-    font-size: 1.5em;
-  }
-  .link-icon {
-    font-size: 30px;
-    padding-left: 20px;
-    margin-right: 10px;
-  }
-  .link a {
-    font-size: 1.3em;
-    margin-right: 5px;
-    padding: 6px;
-  }
-}
-@media (max-width: 579px) {
-  .headingtext {
-    padding-top: 2%;
-    font-size: 1em;
-    padding-left: 14%;
-  }
-  .link a {
-    font-size: 1em;
-    margin-right: 15px;
-    padding: 5px;
-    padding-bottom: 10px;
-  }
-}
-
-@media (max-width: 320px) {
-  #outer-left {
-    width: 75%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  .headingtext {
-    padding-left: 30px;
-    font-size: 1em;
-    padding-bottom: 0px;
-  }
-  .link-icon {
-    font-size: 20px;
-    padding-left: 10px;
-    margin-right: 10px;
-  }
-  .link a {
-    padding: 0px;
-    font-size: 1em;
-    margin-right: 5px;
-  }
-}
 
 /* Background Animations */
 
