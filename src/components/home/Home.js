@@ -1,7 +1,7 @@
 import React from 'react'
 import LeftSliceDiv from '../miscellaneous/LeftSliceDiv';
 import SlantDividerDown from '../miscellaneous/SlantDividerDown';
-import SlantedBanner from './SlantedBanner';
+import SlantedBanner from '../miscellaneous/SlantedBanner';
 import Footer from '../footer/Footer';
 import './Home.css';
 import ParagraphContentPanel from '../miscellaneous/ParagraphContentPanel';

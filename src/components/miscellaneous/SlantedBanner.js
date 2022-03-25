@@ -1,7 +1,7 @@
 import React from 'react'
 import backgroundImage from '../../img/1741531.jpg'
 import { Parallax } from 'react-parallax';
-import ParticleEnv from './ParticleEnv';
+import ParticleEnv from '../particle/ParticleEnv';
 import ButtonMain from '../miscellaneous/ButtonMain';
 import './SlantedBanner.css';
 import { BsFillArrowRightSquareFill } from "react-icons/bs"
