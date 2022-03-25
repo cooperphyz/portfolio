@@ -1,0 +1,95 @@
+.button-main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.button-main a {
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  color: rgb(255, 255, 255);
+  transition: color 0.2s;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.button-icon {
+  margin-left: 8px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+/* Button background styling before hover */
+
+.button-main a:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.button-main a:before {
+  color: #fff;
+}
+
+button.left:before {
+  left: -0.3em;
+  top: 0;
+  height: 100%;
+  width: 0.08em;
+  transform: skew(-20deg);
+  transition: width 0.1s;
+}
+
+.button-main a:before {
+  right: -0.3em;
+  top: 0;
+  height: 90%;
+  width: calc(100% + 0.6em);
+  transform: skew(-20deg);
+  transition: width 0.1s;
+}
+
+.button-main a:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(39, 51, 141);
+  z-index: -1;
+}
+.button-main a:hover {
+  color: #fff;
+}
+
+/* Directions */
+
+button.left:after {
+  left: -0.3em;
+  top: 0;
+  height: 90%;
+  width: 0.08em;
+  transform: skew(-20deg);
+  transition: width 0.1s;
+}
+.button-main a:hover:after {
+  width: calc(100% + 0.6em);
+}
+
+.button-main a:after {
+  right: -0.3em;
+  top: 0;
+  height: 90%;
+  width: 0.08em;
+  transform: skew(-20deg);
+  transition: width 0.1s;
+}
+.button-main a:hover:after {
+  width: calc(100% + 0.6em);
+}
