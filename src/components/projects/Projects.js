@@ -22,11 +22,6 @@ const Projects = () => {
             <LeftSliceContent headingtext={"BDA-Explorer"} languages={["Ruby on Rails", "HTML", "CSS", "Bootstrap"]}/>
           </Fade>
         </div>
-        <div className='project2-display'>
-          <Fade right>
-            <RightSliceContent/>
-          </Fade>
-        </div>
     </div>
   )
 }

@@ -3,10 +3,6 @@ import './LeftSliceContent.css'
 import { GoMarkGithub } from "react-icons/go";
 import { BsLinkedin, BsFillJournalBookmarkFill } from "react-icons/bs"
 
-import Slide from 'react-reveal/Slide';
-import Fade from 'react-reveal/Fade';
-import ParagraphContentPanel from './ParagraphContentPanel';
-
 class LeftSliceDiv extends React.Component {
 
   constructor(props) {
@@ -23,18 +19,25 @@ class LeftSliceDiv extends React.Component {
   }
 render() {
   return (
-  <div id="outer-left"> 
-    <div id="inner-left">
-    <div className='headingtext'>
+  <div id="leftslice-outer-left"> 
+    <div id="leftslice-inner-left">
+    <div className='leftslice-headingtext'>
       {this.props.headingtext}
     </div>
-    <div className='link'>
+    <div className='tags'>
+    {
+      this.languages = this.props.languages.map((language) =>
+      <p className='language-tag'>{language}</p>
+      )
+    }
+    </div>
+    <div className='leftslice-link'>
           <a href="https://github.com/cooperphyz">GitHub</a><GoMarkGithub className='link-icon'/>
         </div>
-        <div className='link'>
+        <div className='leftslice-link'>
           <a href="https://www.linkedin.com/in/gatlin-cooper/">Resume</a><BsFillJournalBookmarkFill className='link-icon'/>
         </div>
-        <div className='link'>
+        <div className='leftslice-link'>
           <a href="https://www.linkedin.com/in/gatlin-cooper/">LinkedIn</a><BsLinkedin className='link-icon'/>
         </div>
     </div>

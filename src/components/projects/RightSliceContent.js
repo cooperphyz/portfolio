@@ -1,5 +1,5 @@
 import React from 'react'
-import './RightSliceContent.css'
+//import './RightSliceContent.css'
 
 class RightSliceDiv extends React.Component {
 
@@ -7,6 +7,7 @@ class RightSliceDiv extends React.Component {
     super(props);
     this.state = {
       isOpen: false,
+      language: []
     };
     this.clickToggle = this.clickToggle.bind(this);
   }
@@ -24,7 +25,7 @@ class RightSliceDiv extends React.Component {
           BDA-Explorer
         </div>
         <div className='link'>
-          
+
         </div>
         <div className='link'>
           
