@@ -32,8 +32,9 @@
 
 .dropdown-content {
   position: relative;
-  top: 110px;
-  right: 252px;
+  top: 222px;
+  padding-left: 32%;
+  margin-right: 22%;
   -ms-transform: skew(-30deg, 0deg);
   -webkit-transform: skew(-30deg, 0deg);
 }

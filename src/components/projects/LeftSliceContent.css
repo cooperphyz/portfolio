@@ -28,6 +28,15 @@
   font-size: 2rem;
 }
 
+.dropdown-content {
+  position: absolute;
+  top: 222px;
+  padding-left: 32%;
+  margin-right: 22%;
+  -ms-transform: skew(-30deg, 0deg);
+  -webkit-transform: skew(-30deg, 0deg);
+}
+
 #outer-left:after {
   content: "";
   display: inline-block;

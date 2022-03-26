@@ -1,14 +1,12 @@
 import React from 'react'
 import './RightSliceContent.css'
 
-import ParagraphContentPanel from './ParagraphContentPanel';
-
-class LeftSliceDiv extends React.Component {
+class RightSliceDiv extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: true,
+      isOpen: false,
     };
     this.clickToggle = this.clickToggle.bind(this);
   }
@@ -34,16 +32,10 @@ class LeftSliceDiv extends React.Component {
         <div className='link'>
           
         </div>
-
       </div>
-      <input type="submit" value="Search" onClick={this.clickToggle} />
-  
-      <div className='dropdown-content'>
-        { this.state.isOpen ? <ParagraphContentPanel /> : null }
-      </div>
-    </div>  
+    </div>
   )
 }
 }
 
-export default LeftSliceDiv
+export default RightSliceDiv

@@ -6,9 +6,6 @@ const ParagraphContentPanel = () => {
     <div className='paragraph-container'>
       <div className='paragraph-content'>
         <div className='paragraph-topdecoration'/>
-        <div className='paragraph-header'>
-            Hello, my name is Gatlin Cooper.
-        </div>
         <div className='paragraph-text'>
             <p>I am a senior year computer science student studying at OSU-Cascades.</p>
             <p>I love working with web application frameworks, particularly React.js and Ruby on Rails, to develop functional and practical web applications. </p>
