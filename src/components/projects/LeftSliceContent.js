@@ -1,7 +1,5 @@
 import React from 'react'
 import './LeftSliceContent.css'
-import { GoMarkGithub } from "react-icons/go";
-import { BsLinkedin, BsFillJournalBookmarkFill } from "react-icons/bs"
 
 class LeftSliceDiv extends React.Component {
 
@@ -31,15 +29,10 @@ render() {
       )
     }
     </div>
-    <div className='leftslice-link'>
-          <a href="https://github.com/cooperphyz">GitHub</a><GoMarkGithub className='link-icon'/>
-        </div>
-        <div className='leftslice-link'>
-          <a href="https://www.linkedin.com/in/gatlin-cooper/">Resume</a><BsFillJournalBookmarkFill className='link-icon'/>
-        </div>
-        <div className='leftslice-link'>
-          <a href="https://www.linkedin.com/in/gatlin-cooper/">LinkedIn</a><BsLinkedin className='link-icon'/>
-        </div>
+    <div className='leftslice-img-container'>
+      <div className='fade'/>
+      <img className='leftslice-img' src='https://i.imgur.com/cb9Bvul.png'></img>
+    </div>
     </div>
 </div>
   )
