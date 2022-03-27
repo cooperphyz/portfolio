@@ -18,18 +18,18 @@ const Projects = () => {
           </Slide>
         </div>
         <div className='project1-display'>
-          <Fade left>
+          <Fade left delay={200}>
             <LeftSliceContent headingtext={"BDA-Explorer"} languages={["Ruby on Rails", "HTML", "CSS", "Bootstrap"]} imageurl={"https://i.imgur.com/NYXCgK2.png"}/>
           </Fade>
         </div>
         <div className='project2-display'>
-          <Fade left>
-            <LeftSliceContent headingtext={"Vava Grounds"} languages={["React.js", "HTML", "CSS", "JavaScript"]} imageurl={""}/>
+        <Fade left delay={400}>
+            <LeftSliceContent headingtext={"Vava Grounds"} languages={["React.js ", "HTML", "CSS", "JavaScript"]} imageurl={"https://i.imgur.com/p1xhPqn.png"}/>
           </Fade>
         </div>
         <div className='project3-display'>
-          <Fade left>
-            <LeftSliceContent headingtext={"Vava Grounds"} languages={["React.js", "HTML", "CSS", "JavaScript"]} imageurl={""}/>
+        <Fade left delay={600}>
+            <LeftSliceContent headingtext={"Wasteagram"} languages={["Flutter", "Dart", "Android SDK", "Firestore"]} imageurl={"https://i.imgur.com/qH9yqPU.png"}/>
           </Fade>
         </div>
       <footer>

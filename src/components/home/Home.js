@@ -39,7 +39,7 @@ class Home extends React.Component {
     </div>
     <footer>
         <Footer/>
-      </footer>
+    </footer>
     </div>
   )
 }
