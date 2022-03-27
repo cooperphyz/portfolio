@@ -36,11 +36,13 @@ render() {
       )
     }
     </div>
-    <div className='leftslice-sourcecode'>
-      <ButtonMain buttonlabel={"Code"} icon={<BsCode/>}/>
-    </div>
-    <div className='leftslice-project-live'>
-    <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>}/>
+    <div className='leftslice-buttons'>
+      <div className='leftslice-sourcecode'>
+        <ButtonMain buttonlabel={"Code"} icon={<BsCode/>}/>
+      </div>
+      <div className='leftslice-project-live'>
+      <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>}/>
+      </div>
     </div>
     </div>
 </div>
