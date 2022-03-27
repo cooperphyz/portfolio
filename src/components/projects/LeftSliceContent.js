@@ -23,7 +23,7 @@ render() {
   <div id="leftslice-outer-left">
     <div className='leftslice-img-container'>
       <div className='fade'/>
-      <img className='leftslice-img' src='https://i.imgur.com/NYXCgK2.png' alt="bda"/>
+      <img className='leftslice-img' src={this.props.imageurl} alt="bda"/>
     </div>
     <div id="leftslice-inner-left">
     <div className='leftslice-headingtext'>
