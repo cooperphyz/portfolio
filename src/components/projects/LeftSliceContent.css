@@ -9,7 +9,6 @@
   z-index: 20;
   border-bottom: 3px solid #000000af;
   padding: 10px 30px 10px 75px;
-  font-size: 20px;
   color: #ffffff;
   position: relative;
   left: -100px;
@@ -20,10 +19,10 @@
 
 .leftslice-headingtext {
   padding-top: 20px;
-  padding-left: 14%;
+  padding-left: 60px;
   padding-bottom: 20px;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .dropdown-content {
@@ -41,7 +40,7 @@
   position: absolute;
   width: 20px;
   height: 100%;
-  right: 0px;
+  right: -3px;
   top: 0px;
   z-index: 10;
 
@@ -122,23 +121,24 @@ button.left:after {
 
 /* Tag styling */
 
-.tags {
+.leftslice-tags {
+  top: -15px;
   position: relative;
   width: 100%;
   padding-left: 12%;
 }
-.tags li,
-.tags p {
+.leftslice-tags li,
+.leftslice-tags p {
   float: left;
   height: 26px;
   line-height: 24px;
   position: relative;
-  font-size: 14px;
+  font-size: 15px;
 }
-.tags p {
+.leftslice-tags p {
   margin-left: 20px;
   padding: 0 10px 0 12px;
-  background: #0089e0;
+  background: rgb(142, 68, 216);
   color: #fff;
   text-decoration: none;
   -moz-border-radius-bottomright: 4px;
@@ -148,7 +148,7 @@ button.left:after {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
 }
-.tags p:before {
+.leftslice-tags p:before {
   content: "";
   float: left;
   position: absolute;
@@ -156,11 +156,11 @@ button.left:after {
   left: -12px;
   width: 0;
   height: 0;
-  border-color: transparent #0089e0 transparent transparent;
+  border-color: transparent rgb(142, 68, 216) transparent transparent;
   border-style: solid;
   border-width: 12px 12px 14px 0;
 }
-.tags p:after {
+.leftslice-tags p:after {
   content: "";
   position: absolute;
   top: 10px;
@@ -181,17 +181,20 @@ button.left:after {
 
 .leftslice-img-container {
   position: absolute;
-  width: 150%;
-  height: 220px;
+  width: 60%;
+  height: 230px;
   overflow: hidden;
   top: -10px;
-  left: 100%;
+  left: 50%;
   margin-right: 0%;
+  -ms-transform: skew(30deg, 0deg);
+  -webkit-transform: skew(30deg, 0deg);
+  transform: skew(30deg, 0deg);
 }
 .leftslice-img {
-  position: fixed;
+  position: absolute;
+  left: 1px;
   z-index: -2;
-  left: 101%;
   min-width: 100%;
   min-height: 100%;
 }
@@ -200,9 +203,23 @@ button.left:after {
   position: absolute;
   z-index: -1;
   height: 100%;
-  width: 100%;
+  width: 30%;
   position: absolute;
   background: linear-gradient(to right, #333333, transparent 90%);
+}
+
+/* Button Div positioning */
+
+.leftslice-sourcecode {
+  position: relative;
+  top: 85px;
+  left: -70px;
+}
+
+.leftslice-project-live {
+  position: relative;
+  top: 85px;
+  left: 140px;
 }
 
 /* Scaling for window Sizes */
@@ -210,20 +227,10 @@ button.left:after {
 @media (max-width: 1550px) {
   .leftslice-headingtext {
     padding-top: 10px;
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
-  .leftslice-link-icon {
-    font-size: 30px;
-    padding-left: 20px;
-    margin-right: 10px;
-  }
-  .leftslice-link a {
-    font-size: 1.3em;
-    margin-right: 5px;
-    padding: 6px;
-  }
-  .tags {
-    padding-left: 6%;
+  .leftslice-tags {
+    padding-left: 50px;
   }
 }
 
@@ -231,20 +238,12 @@ button.left:after {
   #leftslice-outer-left {
     width: 80%;
   }
-  .leftslice-link a {
-    font-size: 0.8em;
-    margin-right: 20px;
-    padding: 10px;
-  }
   .leftslice-headingtext {
     padding-top: 10px;
     font-size: 1.5em;
-    padding-left: 10%;
+    padding-left: 40px;
   }
-  .leftslice-link-icon {
-    font-size: 30px;
-  }
-  .tags {
+  .leftslice-tags {
     padding-left: 8%;
   }
 }
@@ -252,16 +251,21 @@ button.left:after {
 @media (max-width: 579px) {
   .leftslice-headingtext {
     padding-top: 2%;
-    padding-left: 9%;
   }
-  .leftslice-link a {
-    font-size: 1em;
-    margin-right: 15px;
-    padding: 5px;
-    padding-bottom: 10px;
-  }
-  .tags {
+  .leftslice-tags {
     padding-left: 6%;
+  }
+  .leftslice-sourcecode {
+    top: 120px;
+    left: -50px;
+  }
+  .leftslice-project-live {
+    top: 170px;
+    left: -50px;
+  }
+  #leftslice-outer-left {
+    height: auto;
+    padding-bottom: 100px;
   }
 }
 
@@ -275,16 +279,6 @@ button.left:after {
     padding-left: 30px;
     font-size: 1em;
     padding-bottom: 0px;
-  }
-  .leftslice-link-icon {
-    font-size: 20px;
-    padding-left: 10px;
-    margin-right: 10px;
-  }
-  .leftslice-link a {
-    padding: 0px;
-    font-size: 1em;
-    margin-right: 5px;
   }
 }
 /* Background Animations */
