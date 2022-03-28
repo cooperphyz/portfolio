@@ -34,7 +34,10 @@ const LeftSliceContent = (props, {children}) => {
       <ButtonMain buttonlabel={"Code"} icon={<BsCode/>} hreflink={props.codelink}/>
       </div>
       <div className='leftslice-project-live'>
-      <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>} hreflink={props.livelink}/>
+        { props.livelinkenabled
+          ? <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>} enabled={props.livelinkenabled} hreflink={props.livelink}/>
+          : null
+        }
       </div>
       <div className='leftslice-read-more'>
       <ButtonMain buttonlabel={"Read More"} onClick={() => setIsOpen(!isOpen)} icon={<AiOutlineRead/>}/>

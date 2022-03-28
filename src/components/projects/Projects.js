@@ -20,7 +20,7 @@ const Projects = () => {
         <div className='project1-display'>
           <Fade left delay={200}>
             <LeftSliceContent headingtext={"BDA-Explorer"} languages={["Ruby on Rails", "HTML", "CSS", "Bootstrap"]} imageurl={"https://i.imgur.com/NYXCgK2.png"}
-            codelink={"https://github.com/osu-cascades/bda-explorer"} livelink={"https://bda-explorer.herokuapp.com/"}
+            codelink={"https://github.com/osu-cascades/bda-explorer"} livelink={"https://bda-explorer.herokuapp.com/"} livelinkenabled={true}
             popupheading={"BDA-Explorer"}
             popuptext={[
               "[Fall 2021-Summer 2022]",
@@ -36,7 +36,7 @@ const Projects = () => {
         <div className='project2-display'>
         <Fade left delay={400}>
             <LeftSliceContent headingtext={"Vava Grounds"} languages={["React.js ", "HTML", "CSS", "JavaScript"]} imageurl={"https://i.imgur.com/p1xhPqn.png"}
-            codelink={"https://github.com/cooperphyz/CoffeeShopProject"} livelink={" "}
+            codelink={"https://github.com/cooperphyz/CoffeeShopProject"} livelink={" "} livelinkenabled={false}
             popupheading={"Vava Grounds"}
             popuptext={[
               "[Summer 2021-Fall 2021]",
@@ -50,7 +50,7 @@ const Projects = () => {
         <div className='project3-display'>
         <Fade left delay={600}>
             <LeftSliceContent headingtext={"Team Trails"} languages={["React.js", "HTML", "CSS", "JavaScript"]} imageurl={"https://i.imgur.com/qH9yqPU.png"}
-            codelink={"https://github.com/jasnkwcz/Team-Trails"} livelink={"https://www.youtube.com/watch?v=WF1YZMsO93s"}
+            codelink={"https://github.com/jasnkwcz/Team-Trails"} livelink={"https://www.youtube.com/watch?v=WF1YZMsO93s"} livelinkenabled={true}
             popupheading={"Team Trails"}
             popuptext={[
               "[Fall 2020]",
