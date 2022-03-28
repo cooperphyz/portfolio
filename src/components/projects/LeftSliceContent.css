@@ -17,6 +17,10 @@
   overflow-y: hidden;
 }
 
+#leftslice-popup {
+  overflow-y: hidden;
+}
+
 .leftslice-headingtext {
   padding-top: 20px;
   padding-left: 60px;

@@ -43,7 +43,7 @@ const LeftSliceContent = (props, {children}) => {
     </div>
   </div>
   <div id='leftslice-popup'>
-    <Fade top when={isOpen}>
+    <Fade top when={isOpen} >
       <ProjectPopup open={isOpen} onClose={() => setIsOpen(false)}
       popupheading={props.popupheading}
       popuptext={props.popuptext}>
