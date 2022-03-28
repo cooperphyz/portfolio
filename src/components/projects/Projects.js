@@ -10,6 +10,7 @@ import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
   return (
+    <div className='encompass-projects'>
     <div className='projects-container'>
         <SlantedBanner heading={"/projects"}/>
         <div className='top-divider-banner'>
@@ -61,6 +62,7 @@ const Projects = () => {
               "The duration of my time on this project was 3 months, in which I went from no knowledge of React.js, to being rather proficient"
             ]}/>
           </Fade>
+        </div>
         </div>
       <footer>
         <Footer/>

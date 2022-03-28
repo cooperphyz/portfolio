@@ -1,3 +1,24 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(22, 22, 28);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.encompass-projects {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.projects-container {
+  flex: 1 0 auto;
+}
+
 .top-divider-banner {
   position: relative;
   bottom: -40px;
@@ -12,10 +33,16 @@
 .project2-display {
   position: relative;
   top: 150px;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: all 0.5s;
 }
 
 .project3-display {
   position: relative;
   top: 200px;
+}
+
+footer {
+  color: white;
+  justify-self: flex-end;
+  margin-top: 130px;
 }
