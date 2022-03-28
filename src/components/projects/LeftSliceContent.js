@@ -43,6 +43,9 @@ render() {
       <div className='leftslice-project-live'>
       <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>}/>
       </div>
+      <div className='leftslice-read-more'>
+      <ButtonMain buttonlabel={"Read More"} icon={<AiFillPlayCircle/>}/>
+      </div>
     </div>
     </div>
 </div>

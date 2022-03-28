@@ -184,9 +184,14 @@ button.left:after {
 .leftslice-project-live {
   position: relative;
   top: 85px;
-  left: 140px;
+  left: 130px;
 }
 
+.leftslice-read-more {
+  position: relative;
+  top: 85px;
+  left: 370px;
+}
 .leftslice-buttons {
   position: absolute;
   left: 220px;
@@ -194,13 +199,37 @@ button.left:after {
 
 /* Scaling for window Sizes */
 
-@media (max-width: 1550px) {
+@media (max-width: 1579px) {
   .leftslice-headingtext {
     padding-top: 10px;
     font-size: 1.6em;
   }
   .leftslice-tags {
     padding-left: 50px;
+  }
+}
+
+@media (max-width: 1079px) {
+  .leftslice-sourcecode {
+    left: -70px;
+  }
+  .leftslice-project-live {
+    left: 100px;
+  }
+  .leftslice-read-more {
+    left: 310px;
+  }
+}
+
+@media (max-width: 949px) {
+  .leftslice-sourcecode {
+    left: -90px;
+  }
+  .leftslice-project-live {
+    left: 50px;
+  }
+  .leftslice-read-more {
+    left: 222px;
   }
 }
 
@@ -216,28 +245,40 @@ button.left:after {
   .leftslice-tags {
     padding-left: 8%;
   }
+  .leftslice-buttons {
+    left: 200px;
+  }
 }
 
 @media (max-width: 579px) {
+  #leftslice-outer-left {
+    width: 73%;
+  }
   .leftslice-headingtext {
     padding-top: 2%;
+    padding-left: 10px;
   }
   .leftslice-tags {
-    padding-left: 6%;
+    padding-left: 0px;
+    padding-right: 100px;
+    max-width: 300px;
   }
-  .leftslice-sourcecode {
+  .leftslice-read-more {
     top: 120px;
-    left: -50px;
+    left: -35px;
   }
   .leftslice-project-live {
     top: 170px;
-    left: -50px;
+    left: -75px;
+  }
+  .leftslice-sourcecode {
+    top: 220px;
+    left: -70px;
   }
   #leftslice-outer-left {
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
-
   .leftslice-buttons {
     position: absolute;
     left: 150px;
