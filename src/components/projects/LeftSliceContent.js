@@ -6,7 +6,7 @@ import { BsCode} from "react-icons/bs"
 import ProjectPopup from '../projects/projectspopup/ProjectPopup';
 import Fade from 'react-reveal/Fade';
 
-const LeftSliceContent = (props) => {
+const LeftSliceContent = (props, {children}) => {
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -44,8 +44,9 @@ const LeftSliceContent = (props) => {
   </div>
   <div id='leftslice-popup'>
     <Fade top when={isOpen}>
-      <ProjectPopup open={isOpen} onClose={() => setIsOpen(false)}>
-        Boogies
+      <ProjectPopup open={isOpen} onClose={() => setIsOpen(false)}
+      popupheading={props.popupheading}
+      popuptext={props.popuptext}>
       </ProjectPopup>
     </Fade>
     </div>
