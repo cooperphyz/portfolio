@@ -1,7 +1,7 @@
 import React from 'react'
 import './LeftSliceContent.css'
 import ButtonMain from '../miscellaneous/ButtonMain'
-import { AiFillPlayCircle} from "react-icons/ai"
+import { AiFillPlayCircle, AiOutlineRead} from "react-icons/ai"
 import { BsCode} from "react-icons/bs"
 
 class LeftSliceDiv extends React.Component {
@@ -38,13 +38,13 @@ render() {
     </div>
     <div className='leftslice-buttons'>
       <div className='leftslice-sourcecode'>
-        <ButtonMain buttonlabel={"Code"} icon={<BsCode/>}/>
+      <ButtonMain buttonlabel={"Code"} icon={<BsCode/>} hreflink={this.props.codelink}/>
       </div>
       <div className='leftslice-project-live'>
-      <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>}/>
+      <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>} hreflink={this.props.livelink}/>
       </div>
       <div className='leftslice-read-more'>
-      <ButtonMain buttonlabel={"Read More"} icon={<AiFillPlayCircle/>}/>
+      <ButtonMain buttonlabel={"Read More"} icon={<AiOutlineRead/>}/>
       </div>
     </div>
     </div>

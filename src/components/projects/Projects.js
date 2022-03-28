@@ -19,17 +19,20 @@ const Projects = () => {
         </div>
         <div className='project1-display'>
           <Fade left delay={200}>
-            <LeftSliceContent headingtext={"BDA-Explorer"} languages={["Ruby on Rails", "HTML", "CSS", "Bootstrap"]} imageurl={"https://i.imgur.com/NYXCgK2.png"}/>
+            <LeftSliceContent headingtext={"BDA-Explorer"} languages={["Ruby on Rails", "HTML", "CSS", "Bootstrap"]} imageurl={"https://i.imgur.com/NYXCgK2.png"}
+            codelink={"https://github.com/osu-cascades/bda-explorer"} livelink={"https://bda-explorer.herokuapp.com/"}/>
           </Fade>
         </div>
         <div className='project2-display'>
         <Fade left delay={400}>
-            <LeftSliceContent headingtext={"Vava Grounds"} languages={["React.js ", "HTML", "CSS", "JavaScript"]} imageurl={"https://i.imgur.com/p1xhPqn.png"}/>
+            <LeftSliceContent headingtext={"Vava Grounds"} languages={["React.js ", "HTML", "CSS", "JavaScript"]} imageurl={"https://i.imgur.com/p1xhPqn.png"}
+            codelink={"https://github.com/cooperphyz/CoffeeShopProject"} livelink={" "}/>
           </Fade>
         </div>
         <div className='project3-display'>
         <Fade left delay={600}>
-            <LeftSliceContent headingtext={"Wasteagram"} languages={["Flutter", "Dart", "Android SDK", "Firestore"]} imageurl={"https://i.imgur.com/qH9yqPU.png"}/>
+            <LeftSliceContent headingtext={"Team Trails"} languages={["React.js", "HTML", "CSS", "JavaScript"]} imageurl={"https://i.imgur.com/qH9yqPU.png"}
+            codelink={"https://github.com/jasnkwcz/Team-Trails"} livelink={"https://www.youtube.com/watch?v=WF1YZMsO93s"}/>
           </Fade>
         </div>
       <footer>
