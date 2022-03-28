@@ -1,47 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './LeftSliceContent.css'
 import ButtonMain from '../miscellaneous/ButtonMain'
 import { AiFillPlayCircle, AiOutlineRead} from "react-icons/ai"
 import { BsCode} from "react-icons/bs"
+import ProjectPopup from '../projects/projectspopup/ProjectPopup';
 
-class LeftSliceDiv extends React.Component {
+const LeftSliceContent = (props) => {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false,
-    };
-    this.clickToggle = this.clickToggle.bind(this);
-  }
+  const [isOpen, setIsOpen] = useState(false)
 
-  clickToggle = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-    console.log(this.state.isOpen)
-  }
-render() {
+
   return (
   <div id="leftslice-outer-left">
+
+    <button onClick={() => setIsOpen(true)}>Open Modal</button>
+
+    <ProjectPopup open={isOpen}>
+      Boogies
+    </ProjectPopup>
     <div className='leftslice-img-container'>
       <div className='fade'/>
-      <img className='leftslice-img' src={this.props.imageurl} alt="bda"/>
+      <img className='leftslice-img' src={props.imageurl} alt="bda"/>
     </div>
     <div id="leftslice-inner-left">
     <div className='leftslice-headingtext'>
-      {this.props.headingtext}
+      {props.headingtext}
     </div>
     <div className='leftslice-tags'>
     {
-      this.languages = this.props.languages.map((language) =>
+      props.languages.map((language) =>
       <p className='language-tag'>{language}</p>
       )
     }
     </div>
     <div className='leftslice-buttons'>
       <div className='leftslice-sourcecode'>
-      <ButtonMain buttonlabel={"Code"} icon={<BsCode/>} hreflink={this.props.codelink}/>
+      <ButtonMain buttonlabel={"Code"} icon={<BsCode/>} hreflink={props.codelink}/>
       </div>
       <div className='leftslice-project-live'>
-      <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>} hreflink={this.props.livelink}/>
+      <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>} hreflink={props.livelink}/>
       </div>
       <div className='leftslice-read-more'>
       <ButtonMain buttonlabel={"Read More"} icon={<AiOutlineRead/>}/>
@@ -51,6 +48,5 @@ render() {
 </div>
   )
 }
-}
 
-export default LeftSliceDiv
+export default LeftSliceContent

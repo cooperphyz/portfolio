@@ -1,0 +1,19 @@
+.project-popup-container {
+  width: 80%;
+  position: fixed;
+  z-index: 1;
+  background: green;
+  left: 10%;
+}
+
+.project-popup-heading {
+  color: white;
+  padding-left: 4%;
+  font-size: 2rem;
+}
+
+.project-popup-content {
+  color: white;
+  padding-left: 4%;
+  font-size: 1.5rem;
+}
