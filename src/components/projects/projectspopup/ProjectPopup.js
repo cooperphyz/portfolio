@@ -1,7 +1,8 @@
 import React from 'react'
 import './ProjectPopup.css'
 
-const ProjectPopup = ({open, children}) => {
+
+const ProjectPopup = ({open, children, onClose}) => {
   if (!open) return null
   return (
     <div className='project-popup-container'>

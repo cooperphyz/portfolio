@@ -4,6 +4,7 @@ import ButtonMain from '../miscellaneous/ButtonMain'
 import { AiFillPlayCircle, AiOutlineRead} from "react-icons/ai"
 import { BsCode} from "react-icons/bs"
 import ProjectPopup from '../projects/projectspopup/ProjectPopup';
+import Fade from 'react-reveal/Fade';
 
 const LeftSliceContent = (props) => {
 
@@ -11,13 +12,8 @@ const LeftSliceContent = (props) => {
 
 
   return (
-  <div id="leftslice-outer-left">
-
-    <button onClick={() => setIsOpen(true)}>Open Modal</button>
-
-    <ProjectPopup open={isOpen}>
-      Boogies
-    </ProjectPopup>
+  <div className='leftslice-container'>
+   <div id="leftslice-outer-left">
     <div className='leftslice-img-container'>
       <div className='fade'/>
       <img className='leftslice-img' src={props.imageurl} alt="bda"/>
@@ -41,11 +37,19 @@ const LeftSliceContent = (props) => {
       <ButtonMain buttonlabel={"Live"} icon={<AiFillPlayCircle/>} hreflink={props.livelink}/>
       </div>
       <div className='leftslice-read-more'>
-      <ButtonMain buttonlabel={"Read More"} icon={<AiOutlineRead/>}/>
+      <ButtonMain buttonlabel={"Read More"} onClick={() => setIsOpen(!isOpen)} icon={<AiOutlineRead/>}/>
       </div>
     </div>
     </div>
-</div>
+  </div>
+  <div id='leftslice-popup'>
+    <Fade top when={isOpen}>
+      <ProjectPopup open={isOpen} onClose={() => setIsOpen(false)}>
+        Boogies
+      </ProjectPopup>
+    </Fade>
+    </div>
+</div>  
   )
 }
 
