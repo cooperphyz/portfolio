@@ -17,8 +17,6 @@ const Navbar = () => {
       <div className='hamburger'>
       <GiHamburgerMenu size={50} color={'white'}/>
       </div>
-      <div className='navbar-hamburger'>
-      </div>
     </div>
   )
 }
