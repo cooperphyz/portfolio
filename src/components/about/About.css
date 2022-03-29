@@ -21,7 +21,7 @@ body {
 
 .about-content {
   position: relative;
-  top: 150px;
+  top: 160px;
 }
 
 footer {
@@ -37,4 +37,8 @@ footer {
   box-shadow: black 0px 0px 10px 1px;
   padding: 5px;
   margin: 9px;
+}
+
+.about-iconlist {
+  text-align: center;
 }

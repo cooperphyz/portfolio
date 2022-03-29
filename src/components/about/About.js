@@ -21,7 +21,20 @@ const About = () => {
         </div>
         <div className='about-content'>
           <ParagraphContentPanel parheader={"About Me"}>
-            <p>asdfsdfasdfsdf</p>
+            <p>I've been able to cultivate my professional skills through a variety of different means, both inside and outside of school.</p>
+            <p>As it pertains to Software Development from a purely technical aspect, I have taken a multitude of high-quality courses through my time at OSU-Cascades and Central Oregon Community College 
+              that have fostered an incredible foundation for myself to be able to quickly adopt new skills and technologies with. I discovered that I had a passion for web application development early on with
+              my initial exposure to React, and as such took courses pertaining to that path where I could.
+            </p>
+            <p>From the standpoint of being able to perform in a professional environment, OSU-Cascades and my multi-year personal work experience as a Manager for a department in a retail store have geared me much towards
+              success. OSU-Cascades provides much more than just teaching students how to code, they teach students how to operate within a professional environment. Customer service, working with professional clients,
+              and teamwork, are among the skills that both of the aforementioned institutions have instilled in me.
+            </p>
+            <p>
+              I have found myself able to learn new languages, frameworks, and paradigms rather quickly. I've been able to go from knowing nothing about a framework/language, to being decently fluent in only a few week
+              time period, even whilst taking full course loads alongside it. 
+            </p>
+            <hr></hr>
             <Fade left cascade>
             <div className='about-iconlist'>
               <SiRubyonrails className='about-icon'/>
