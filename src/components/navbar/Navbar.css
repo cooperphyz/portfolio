@@ -150,21 +150,6 @@ button.left:after {
   right: 0;
   top: 0;
 }
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
 
 /* Hamburger Menu Functionality */
 
