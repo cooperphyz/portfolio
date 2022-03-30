@@ -41,7 +41,6 @@
   padding: 20px;
   font-weight: 700;
   font-size: 1.4em;
-  z-index: 1000;
 }
 
 .navbar li a:after {
@@ -155,7 +154,9 @@ a:active {
   .navbar li {
     display: inline;
   }
-  .hamburger {
+  .hamburger,
+  .hamburger-menu,
+  .hamburger-background-blur {
     display: hidden;
     display: none;
   }

@@ -3,6 +3,7 @@ import './Navbar.css'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
 import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const Navbar = () => {
 
@@ -38,11 +39,9 @@ const Navbar = () => {
           </ul>
         </div>
       </Fade>
-      { hamburgerOpen ? 
       <Fade when={hamburgerOpen}>
         <div className='hamburger-background-blur'/> 
       </Fade>
-      : null }
     </div>
   )
 }
