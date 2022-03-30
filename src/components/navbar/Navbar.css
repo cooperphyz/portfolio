@@ -173,3 +173,16 @@ button.left:after {
     display: block;
   }
 }
+
+@media only screen and (max-width: 579px) {
+  .hamburger-menu li a {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hamburger-menu li a {
+    font-size: 1.1rem;
+    padding: 20px 5px 20px 5px;
+  }
+}
