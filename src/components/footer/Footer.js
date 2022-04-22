@@ -21,7 +21,7 @@ const Footer = () => {
         <h4 className='footer-col2-head'>Links and Navigation</h4>
         <ul className='footer-col2-list'>
         <p><a href="https://github.com/cooperphyz">GitHub</a><GoMarkGithub size={20}/></p>
-        <p><a href="https://www.linkedin.com/in/gatlin-cooper/">Resume</a><BsFillJournalBookmarkFill size={20}/></p>
+        <p><a href="ResumeUpdated04022.pdf">Resume</a><BsFillJournalBookmarkFill size={20}/></p>
         <p><a href="https://www.linkedin.com/in/gatlin-cooper/">LinkedIn </a><BsLinkedin size={20}/></p>
         </ul>
       </div>

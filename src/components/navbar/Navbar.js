@@ -3,7 +3,6 @@ import './Navbar.css'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
 
 const Navbar = () => {
 

@@ -14,7 +14,7 @@ const LeftSliceDiv = () => {
           <a href="https://github.com/cooperphyz">GitHub</a><GoMarkGithub className='link-icon'/>
         </div>
         <div className='link'>
-          <a href="https://www.linkedin.com/in/gatlin-cooper/">Resume</a><BsFillJournalBookmarkFill className='link-icon'/>
+          <a href='ResumeUpdated04022.pdf'>Resume</a><BsFillJournalBookmarkFill className='link-icon'/>
         </div>
         <div className='link'>
           <a href="https://www.linkedin.com/in/gatlin-cooper/">LinkedIn</a><BsLinkedin className='link-icon'/>
