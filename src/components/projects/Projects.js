@@ -50,14 +50,14 @@ const Projects = () => {
         </div>
         <div className='project3-display'>
         <Fade left delay={600}>
-            <LeftSliceContent headingtext={"Team Trails"} languages={["React.js", "HTML", "CSS", "JavaScript"]} imageurl={"https://i.imgur.com/qH9yqPU.png"}
-            codelink={"https://github.com/jasnkwcz/Team-Trails"} livelink={"https://www.youtube.com/watch?v=WF1YZMsO93s"} livelinkenabled={true}
+            <LeftSliceContent headingtext={"Team Trails"} languages={["React.js", "HTML", "CSS", "JavaScript"]} imageurl={"https://i.imgur.com/03WTXdT.png"}
+            codelink={"https://github.com/jasnkwcz/Team-Trails"} livelink={"https://www.youtube.com/watch?v=abx3tJj7NMw"} livelinkenabled={true}
             popupheading={"Team Trails"}
             popuptext={[
               "[Fall 2020]",
               "The Team Trails website served as as a multi-functional trail locating tool, with included weather functionality and equipment recommendations ",
               "This project represents my Software Engineering I project at OSU-Cascades, which had a strong emphasis on developing professional development skills, not only in coding, but the processes that a professional environment requires",
-              "I worked in a team environment on this React.js Project, collaborating in an effective and efficient manor with four other team members to deliver value to our client",
+              "I worked in a team environment on this React.js Project, collaborating in an effective and efficient manor on Asana with four other team members to deliver value to our client",
               "My role within this project was to build the 'Equipment Page' functionality from the ground up. This required UI/UX design, state management, and API calls to gather Trail and Weather information to document on the website",
               "The duration of my time on this project was 3 months, in which I went from no knowledge of React.js, to being rather proficient"
             ]}/>
