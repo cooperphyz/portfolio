@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
       </Fade>
       <Fade when={hamburgerOpen}>
-        <div className='hamburger-background-blur'/> 
+        { hamburgerOpen ? <div className='hamburger-background-blur'/> : ''}
       </Fade>
     </div>
   )
