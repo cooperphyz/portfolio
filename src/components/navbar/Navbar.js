@@ -30,6 +30,7 @@ const Navbar = () => {
       <Fade right when={hamburgerOpen}>
         <div className='hamburger-menu'>
           <AiOutlineClose className='hamburger-close' onClick={toggleHamburger} size={50} color= {'white'}/>
+          { hamburgerOpen ?
           <ul className='hamburger-items'>
             <li className='hamburger-item'><a href="/">Home</a></li>
             <hr/>
@@ -37,6 +38,7 @@ const Navbar = () => {
             <hr/>
             <li className='hamburger-item'><a href="/projects">Projects</a></li>
           </ul>
+          : '' }
         </div>
       </Fade>
       <Fade when={hamburgerOpen}>
