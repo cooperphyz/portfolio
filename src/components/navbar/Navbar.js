@@ -27,7 +27,7 @@ const Navbar = () => {
       { !hamburgerOpen ? <GiHamburgerMenu onClick={toggleHamburger} size={50} color={'white'}/> : null }
       </div>
       <Fade right when={hamburgerOpen}>
-        <div className='hamburger-menu'>
+      { hamburgerOpen ? <div className='hamburger-menu'>
           <AiOutlineClose className='hamburger-close' onClick={toggleHamburger} size={50} color= {'white'}/>
           { hamburgerOpen ?
           <ul className='hamburger-items'>
@@ -38,7 +38,7 @@ const Navbar = () => {
             <li className='hamburger-item'><a href="/projects">Projects</a></li>
           </ul>
           : '' }
-        </div>
+        </div> : '' }
       </Fade>
       <Fade when={hamburgerOpen}>
         { hamburgerOpen ? <div className='hamburger-background-blur'/> : ''}
