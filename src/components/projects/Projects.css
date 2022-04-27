@@ -46,3 +46,16 @@ footer {
   justify-self: flex-end;
   margin-top: 130px;
 }
+
+@media (max-width: 779px) {
+  .project1-display {
+    top: 40px;
+  }
+  .project2-display {
+    top: 70px;
+  }
+  .project3-display {
+    top: 100px;
+    margin-bottom: -120px;
+  }
+}
