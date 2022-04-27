@@ -42,3 +42,16 @@ footer {
 .about-iconlist {
   text-align: center;
 }
+
+@media (max-width: 779px) {
+  .about-content {
+    top: 50px;
+    margin-bottom: -170px;
+  }
+  .about-icon {
+    size: 20px;
+    font-size: 1.5em;
+    height: 50px;
+    width: 50px;
+  }
+}

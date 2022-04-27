@@ -37,7 +37,7 @@ const About = () => {
             <hr></hr>
             <Fade left cascade>
             <div className='about-iconlist'>
-              <SiRubyonrails className='about-icon'/>
+              <SiRubyonrails className='about-icon' />
               <RiReactjsFill className='about-icon'/>
               <SiCss3 className='about-icon'/>
               <SiHtml5 className='about-icon'/>
