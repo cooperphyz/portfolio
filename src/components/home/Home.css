@@ -45,3 +45,13 @@ footer {
   justify-self: flex-end;
   margin-top: 130px;
 }
+
+@media (max-width: 779px) {
+  .content-1 {
+    top: 40px;
+  }
+  .content-2 {
+    top: 100px;
+    margin-bottom: -115px;
+  }
+}
