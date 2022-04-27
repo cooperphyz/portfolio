@@ -70,14 +70,20 @@ body {
   }
 
   .banner-top-subheading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     top: 58%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
   }
 }
 
 @media (max-width: 579px) {
   .banner-top-heading {
     font-size: 3rem;
+  }
+  .banner-top {
+    height: 400px;
   }
 }
 
