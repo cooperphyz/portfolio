@@ -15,7 +15,8 @@ import {
     SiGithub,
     SiSqlite,
     SiBootstrap,
-    SiPostgresql
+    SiPostgresql,
+    SiTypescript
 } from 'react-icons/si';
 import { RiReactjsFill } from 'react-icons/ri';
 
@@ -67,11 +68,11 @@ const About = () => {
                                 <SiHtml5 className="about-icon" />
                                 <SiPython className="about-icon" />
                                 <SiJavascript className="about-icon" />
+                                <SiTypescript className="about-icon" />
                                 <SiGithub className="about-icon" />
                                 <BiLogoJava className="about-icon" />
                                 <SiSqlite className="about-icon" />
                                 <SiBootstrap className="about-icon" />
-                                <SiPostgresql className="about-icon" />
                             </div>
                         </Fade>
                     </ParagraphContentPanel>
