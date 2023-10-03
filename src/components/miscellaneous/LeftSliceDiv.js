@@ -12,7 +12,7 @@ const LeftSliceDiv = () => {
                     <BsGithub className="link-icon" />
                 </div>
                 <div className="link">
-                    <a href="ResumeUpdated04022.pdf">Resume</a>
+                    <a href="ResumeUpdated09302023.pdf">Resume</a>
                     <BsFillJournalBookmarkFill className="link-icon" />
                 </div>
                 <div className="link">

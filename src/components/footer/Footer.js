@@ -26,7 +26,7 @@ const Footer = () => {
                                 <BsGithub size={20} />
                             </p>
                             <p>
-                                <a href="ResumeUpdated04022.pdf">Resume</a>
+                                <a href="ResumeUpdated09302023.pdf">Resume</a>
                                 <BsFillJournalBookmarkFill size={20} />
                             </p>
                             <p>
